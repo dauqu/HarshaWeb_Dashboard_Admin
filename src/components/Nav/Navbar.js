@@ -60,7 +60,7 @@ const Navbar = ({ toggleSidebar }) => {
             <div className="flex-shrink-0 w-10 h-10  ">
               <img
                 className="w-full h-full rounded-full"
-                src={user.image}
+                src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
                 alt=""
               />
             </div>

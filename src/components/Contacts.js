@@ -60,11 +60,10 @@ const getContacts = () => {
       <Navbar toggleSidebar={toggleSidebar} />
       <div className="flex w-full h-full overflow-hidden flex-row">
         <Sidebar status={sidebarStatus} />
-        
         <div className="container mx-auto px-4 sm:px-8">
           <div className="py-8">
             <div className="flex w-full">
-              <h2 className="md:text-2xl text-[18px] font-semibold">View Application Requests</h2>
+              <h2 className="md:text-2xl text-[18px] font-semibold">View Contacts</h2>
             </div>
             <hr className="my-5 border-gray-400" />
 
@@ -84,7 +83,7 @@ const getContacts = () => {
                     </tr>
                   </thead>
                   <tbody>
-                  {contacts.length > 0 && contacts.map((val, key) => {
+                  {quotes.length > 0 && quotes.map((val, key) => {
                       return (
                         <>
                         <tr key={item._id}>

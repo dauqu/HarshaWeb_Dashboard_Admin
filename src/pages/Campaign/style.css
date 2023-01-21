@@ -1,0 +1,22 @@
+.campaigntable::-webkit-scrollbar {
+    height: 7px;
+    cursor: pointer;
+}
+.campaigntable::-webkit-scrollbar-track {
+    background-color: rgb(197, 193, 193);
+    border-radius: 50px;
+}
+.campaigntable::-webkit-scrollbar-thumb {
+    background-color: rgb(138, 135, 135);
+    border-radius: 50px;
+    height: 2px;
+}
+.campaigntable > table thead tr  th {
+    white-space: nowrap;
+}
+
+.campaigntable > table > tbody tr td {
+    font-family: sans-serif;
+    font-size: 15px;
+    white-space: nowrap;
+}

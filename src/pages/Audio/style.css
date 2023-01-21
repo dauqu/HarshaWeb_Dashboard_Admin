@@ -1,0 +1,50 @@
+.uploadarea {
+    box-shadow: 2px 2px 8px #d9d9d9;
+    border-radius: 10px;
+}
+
+
+#username, #audiofilename {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    -ms-box-shadow: inset 2px 2px 4px #c9c9c9;
+    -moz-box-shadow: inset 2px 2px 4px #c9c9c9;
+    -webkit-box-shadow: inset 2px 2px 4px #c9c9c9;
+    box-shadow: inset 2px 2px 4px #c9c9c9;
+
+}
+
+.uploadFileBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: 2px dashed #5f9ee6;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+.uploadFileBtn > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uploadFileBtn > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #5f9ee6;
+}
+.uploadFileBtn > div > p{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.uploadFileBtn > div > svg {
+    color: white;
+} 

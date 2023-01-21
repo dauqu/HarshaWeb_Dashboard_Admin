@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+.cup{
+    @apply cursor-pointer;
+}
+.footer_links_a{
+    @apply flex items-center font-nunito font-medium text-[16px] leading-[26px] text-[#0d2c13] hover:text-[#0049d0];
+}
+.nav_links_a{
+    @apply flex items-center font-nunito font-medium text-[16px] leading-[26px] text-[#0d2c13] hover:text-[#0049d0];
+}
+.footer_links_a_div{
+    @apply h-[5px] w-[0px] bg-[#0049d0] animate-blink mr-2;
+}
+.nav_links_a_div{
+    @apply h-[5px] w-[0px] bg-[#0049d0] animate-blink mr-2;
+}
+.nunito{
+    @apply font-nunito;
+}
+.flex_jc_ic{
+    @apply flex items-center justify-center;
+}
+.flex_jc{
+    @apply flex justify-center;
+}
+.flex_ic{
+    @apply flex items-center justify-center;
+}
+@tailwind utilities;

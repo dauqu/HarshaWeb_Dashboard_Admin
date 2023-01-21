@@ -1,0 +1,29 @@
+.style_select {
+    width: 65%;
+    /* box-shadow: 1px 1px 5px #c5c5c5; */
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f2f2f2;
+}
+.style_input {
+    width: 65%;
+    /* box-shadow: inset 1px 1px 5px #c5c5c5; */
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+
+.upload_new_contact {
+    /* box-shadow: 2px 2px 8px #d9d9d9; */
+    border-radius: 10px;
+}
+.upload_new_contact > div {
+    width: 90%;
+}
+.unc_notice > p{
+    color: rgb(36, 36, 36);
+    margin-bottom: 10px;
+    font-size: 14px;
+}

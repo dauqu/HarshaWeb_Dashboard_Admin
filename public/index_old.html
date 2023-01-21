@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://www.paypal.com/sdk/js?client-id=AWjEdxmTgdgvHNWgyJRCUZ29PON8Di_dFJyKRlpAAECtRze9WXnKUqgJaBWfJbXyzRf51_YvCW-Jfd0S&currency=USD
+    "></script>
+    <!-- AWjEdxmTgdgvHNWgyJRCUZ29PON8Di_dFJyKRlpAAECtRze9WXnKUqgJaBWfJbXyzRf51_YvCW-Jfd0S Client Id Live -->
+    <!-- ENDlZNVYSnJTpN4cPAsFNr8LKxCPArIkG-_LxzpskK85OSdLyWpOE9mxdbmWdHT5KSXE7737Rr2IOOIY Secret Live -->
+
+    <!-- AcGMBOqvQyzgLnkyQdWPDx8l6yK5bXbOmeG2lyWQEpCQQdxMB0OTlnEOIRUI7fLjZgx5XCu6EVvMzU06 sandbox account -->
+    <link
+  rel="stylesheet"
+  type="text/css"
+  charset="UTF-8"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+/>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Harsha Web</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <script>
+      var what_we_offer = document.getElementsByClassName("what_we_offer");
+      var slide_over = document.getElementsByClassName("slide_over");
+      var slide_over_svg = document.getElementsByClassName("slide_over_svg");
+  
+      what_we_offer[0].addEventListener("mouseover",function(){
+        slide_over[0].classList.toggle("animate-slide_over_left");
+        slide_over_svg[0].style.fill = "white";
+      });
+      what_we_offer[0].addEventListener("mouseout",function(){
+        slide_over[0].classList.toggle("animate-slide_over_right");
+        slide_over_svg[0].style.fill = "#0049d0";
+      });
+  
+      what_we_offer[1].addEventListener("mouseover",function(){
+        slide_over[1].classList.toggle("animate-slide_over_left");
+        slide_over_svg[1].style.fill = "white";
+      });
+      what_we_offer[1].addEventListener("mouseout",function(){
+        slide_over[1].classList.toggle("animate-slide_over_right");
+        slide_over_svg[1].style.fill = "#0049d0";
+      });
+  
+      what_we_offer[2].addEventListener("mouseover",function(){
+        slide_over[2].classList.toggle("animate-slide_over_left");
+        slide_over_svg[2].style.fill = "white";
+      });
+      what_we_offer[2].addEventListener("mouseout",function(){
+        slide_over[2].classList.toggle("animate-slide_over_right");
+        slide_over_svg[2].style.fill = "#0049d0";
+      });
+  
+      what_we_offer[3].addEventListener("mouseover",function(){
+        slide_over[3].classList.toggle("animate-slide_over_left");
+        slide_over_svg[3].style.fill = "white";
+      });
+      what_we_offer[3].addEventListener("mouseout",function(){
+        slide_over[3].classList.toggle("animate-slide_over_right");
+        slide_over_svg[3].style.fill = "#0049d0";
+      });
+  
+      what_we_offer[4].addEventListener("mouseover",function(){
+        slide_over[4].classList.toggle("animate-slide_over_left");
+        slide_over_svg[4].style.fill = "white";
+      });
+      what_we_offer[4].addEventListener("mouseout",function(){
+        slide_over[4].classList.toggle("animate-slide_over_right");
+        slide_over_svg[4].style.fill = "#0049d0";
+      });
+    </script> -->
+    <script>
+      $(".carousel").owlCarousel({
+          loop: true,
+          margin: 50,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          nav: true,
+          navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+          responsive: {
+              0:{items: 1,},
+              600:{items: 2,},
+              1000:{items: 3,},
+              1300:{items: 4,}
+          }
+      })
+  
+      $(".carousel1").owlCarousel({
+          loop: true,
+          margin: 50,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          nav: true,
+          navText: ["<",">"],
+          responsive: {
+              0:{items: 1,},1300:{items: 1,}
+          }
+      })
+  
+      $(".carousel2").owlCarousel({
+          loop: true,
+          margin: 50,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          nav: true,
+          navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+          responsive: {
+              0:{items: 1,},
+              400:{items: 2,},
+              700:{items: 3,},
+              900:{items: 4,},
+              1100:{items: 5,},
+              1300:{items: 6,}
+          }
+      })
+    </script>
+    <!-- <script>
+      var dropdown_mobile_li = document.getElementsByClassName("dropdown_mobile_li")[0];
+      var dropdown_mobile_content = document.getElementsByClassName("dropdown_mobile_content")[0];
+  
+      dropdown_mobile_li.onclick = function()
+      {
+        if(dropdown_mobile_content.style.height == "0px")
+        {
+          dropdown_mobile_content.style.height = "100%";
+          dropdown_mobile_content.style.transition = "0.3s";
+        }
+        else
+        {
+          dropdown_mobile_content.style.height = "0px";
+        }  
+      };
+  
+    </script> -->
+    <script>
+            var uppernav = document.getElementsByClassName("uppernav");
+      var lowernav = document.getElementsByClassName("lowernav");
+      var nav = document.getElementsByTagName("nav");
+      var logo = document.getElementsByClassName("logo");
+      var nav_div = document.getElementsByClassName("nav_div");
+      var menu_icon = document.getElementsByClassName("menu_icon");
+      var mobile_menu = document.getElementsByClassName("mobile_menu");
+
+      var dropdown_it_solution = document.getElementById("dropdown_it_solution");
+      var nav_links = document.getElementsByClassName("nav_links");
+      var nav_blink_div = document.getElementsByClassName("nav_blink_div");
+      
+      // menu_icon[0].onclick = function()
+      // {
+      // if(document.getElementsByClassName("mobile_menu")[0].style.height == "0px")
+      // {
+      //     document.getElementsByClassName("mobile_menu")[0].style.height = "100%";
+      //     document.getElementsByClassName("mobile_menu")[0].style.transition = "0.8s";
+      // }
+      // else
+      // {
+      //     document.getElementsByClassName("mobile_menu")[0].style.height = "0px";
+      // }
+      // };
+      
+      window.addEventListener("scroll",function()
+      {
+          if(window.innerWidth<575)
+          {
+              if(window.scrollY>100){   
+               uppernav[0].style.display = "none";
+               uppernav[1].style.display = "none";
+               lowernav[0].style.background = "#0d0f33";
+               nav[0].style.top = "-100px";
+               nav[0].style.transition = "1s";
+              }
+              if(window.scrollY>150){
+               nav[0].style.position = "fixed";
+               nav[0].style.top = "0px";
+               nav[0].style.transition = "1s";
+              }
+              if(window.scrollY<50){
+               uppernav[0].style.display = "none";
+               uppernav[1].style.display = "none";
+               lowernav[0].style.background = "none";
+               nav[0].style.position = "static";
+               nav[0].style.top = "0px";
+               nav[0].style.transition = "1s";
+              }
+          }
+          else
+          if(window.innerWidth<1000)
+          {
+              if(window.scrollY>100){
+               logo[0].style.height = "57px"
+               uppernav[0].style.display = "none";
+               lowernav[0].style.background = "#0d0f33";
+               nav[0].style.top = "-100px";
+               nav[0].style.transition = "1s";
+              }
+              if(window.scrollY>150){
+               nav[0].style.position = "fixed";
+               nav[0].style.top = "0px";
+               nav[0].style.transition = "1s";
+              }
+              if(window.scrollY<50){
+               logo[0].style.height = "92px;"
+               uppernav[0].style.display = "flex";
+               lowernav[0].style.background = "none";
+               nav[0].style.position = "static";
+               nav[0].style.top = "0px";
+               nav[0].style.transition = "1s";
+              }
+          }
+          else
+          {
+              if(window.scrollY>100){
+                // dropdown_it_solution.style.top = "38px";
+               logo[0].style.height = "57px";
+               uppernav[1].style.display = "none";
+               lowernav[0].style.background = "#0d0f33";
+               nav[0].style.top = "-100px";
+               nav[0].style.transition = "1s";
+               nav[0].style.height = "57px";
+               nav_div[0].style.height = "57px";
+               nav_div[1].style.height = "57px";
+              }
+              if(window.scrollY>150){
+                // dropdown_it_solution.style.top = "38px";
+               nav[0].style.position = "fixed";
+               nav[0].style.top = "0px";
+               nav[0].style.transition = "1s";
+              }
+              if(window.scrollY<50){
+                // dropdown_it_solution.style.top = "75px";
+               logo[0].style.height = "92px";    
+               uppernav[1].style.display = "flex";
+               lowernav[0].style.background = "none";
+               nav[0].style.position = "static";
+               nav[0].style.top = "0px";
+               nav[0].style.height = "92px"; 
+               nav_div[0].style.height = "92px"; 
+               nav_div[1].style.height = "92px";  
+               nav[0].style.transition = "1s";
+              }
+          }
+      
+      });
+      window.addEventListener("resize",function()
+      {
+         if(window.innerWidth>1000){
+          uppernav[0].style.display = "none";
+          uppernav[1].style.display = "flex";
+          logo[0].style.height = "92px";
+         }
+         if(window.innerWidth<1000){
+          uppernav[1].style.display = "none";
+          uppernav[0].style.display = "flex";
+          nav[0].style.height = "57px";
+          nav_div[0].style.height = "57px";
+          nav_div[1].style.height = "57px";
+          logo[0].style.height = "57px";
+         }
+         if(window.innerWidth<575){
+          uppernav[0].style.display = "none";
+          uppernav[1].style.display = "none";
+          logo[0].style.height = "57px";
+         }
+      });
+         
+      var li = document.getElementsByClassName("li");
+      var plus = document.getElementsByClassName("plus");
+      var minus = document.getElementsByClassName("minus");
+      
+      // li[0].addEventListener("mouseover",function(){
+      // plus[0].style.display = "none";
+      // minus[0].style.display = "block";
+      // });
+      // li[0].addEventListener("mouseout",function(){
+      // plus[0].style.display = "block";
+      // minus[0].style.display = "none";
+      // });
+      
+      // li[1].addEventListener("mouseover",function(){
+      // plus[1].style.display = "none";
+      // minus[1].style.display = "block";
+      // });
+      // li[1].addEventListener("mouseout",function(){
+      // plus[1].style.display = "block";
+      // minus[1].style.display = "none";
+      // });
+      
+      // li[2].addEventListener("mouseover",function(){
+      // plus[2].style.display = "none";
+      // minus[2].style.display = "block";
+      // });
+      // li[2].addEventListener("mouseout",function(){
+      // plus[2].style.display = "block";
+      // minus[2].style.display = "none";
+      // });
+      
+      // li[3].addEventListener("mouseover",function(){
+      // plus[3].style.display = "none";
+      // minus[3].style.display = "block";
+      // dropdown_it_solution.style.display = "block";
+      // });
+      // dropdown_it_solution.addEventListener("mouseover",function(){
+      // dropdown_it_solution.style.display = "block";
+      // });
+      // li[3].addEventListener("mouseout",function(){
+      // plus[3].style.display = "block";
+      // minus[3].style.display = "none";
+      // dropdown_it_solution.style.display = "none";
+      // });
+      // dropdown_it_solution.addEventListener("mouseout",function(){
+      // dropdown_it_solution.style.display = "none";
+      // });
+      
+      // li[4].addEventListener("mouseover",function(){
+      // plus[4].style.display = "none";
+      // minus[4].style.display = "block";
+      // });
+      // li[4].addEventListener("mouseout",function(){
+      // plus[4].style.display = "block";
+      // minus[4].style.display = "none";
+      // });
+      
+      // li[5].addEventListener("mouseover",function(){
+      // plus[5].style.display = "none";
+      // minus[5].style.display = "block";
+      // });
+      // li[5].addEventListener("mouseout",function(){
+      // plus[5].style.display = "block";
+      // minus[5].style.display = "none";
+      // });
+
+      // li[6].addEventListener("mouseover",function(){
+      // plus[6].style.display = "none";
+      // minus[6].style.display = "block";
+      //   });
+      // li[6].addEventListener("mouseout",function(){
+      // plus[6].style.display = "block";
+      // minus[6].style.display = "none";
+      //   });
+      
+          // nav_links[0].addEventListener("mouseover",function(){
+          //   nav_blink_div[0].style.width = "5px";
+          //   nav_blink_div[0].style.transition = "0.4s";
+          // });
+          // nav_links[0].addEventListener("mouseout",function(){
+          //   nav_blink_div[0].style.width = "0px";
+          //   nav_blink_div[0].style.transition = "0.4s";
+          // });
+      
+          // nav_links[1].addEventListener("mouseover",function(){
+          //   nav_blink_div[1].style.width = "5px";
+          //   nav_blink_div[1].style.transition = "0.4s";
+          // });
+          // nav_links[1].addEventListener("mouseout",function(){
+          //   nav_blink_div[1].style.width = "0px";
+          //   nav_blink_div[1].style.transition = "0.4s";
+          // });
+      
+          // nav_links[2].addEventListener("mouseover",function(){
+          //   nav_blink_div[2].style.width = "5px";
+          //   nav_blink_div[2].style.transition = "0.4s";
+          // });
+          // nav_links[2].addEventListener("mouseout",function(){
+          //   nav_blink_div[2].style.width = "0px";
+          //   nav_blink_div[2].style.transition = "0.4s";
+          // });
+      
+          // nav_links[3].addEventListener("mouseover",function(){
+          //   nav_blink_div[3].style.width = "5px";
+          //   nav_blink_div[3].style.transition = "0.4s";
+          // });
+          // nav_links[3].addEventListener("mouseout",function(){
+          //   nav_blink_div[3].style.width = "0px";
+          //   nav_blink_div[3].style.transition = "0.4s";
+          // });
+      
+          // nav_links[4].addEventListener("mouseover",function(){
+          //   nav_blink_div[4].style.width = "5px";
+          //   nav_blink_div[4].style.transition = "0.4s";
+          // });
+          // nav_links[4].addEventListener("mouseout",function(){
+          //   nav_blink_div[4].style.width = "0px";
+          //   nav_blink_div[4].style.transition = "0.4s";
+          // });
+      
+          // nav_links[5].addEventListener("mouseover",function(){
+          //   nav_blink_div[5].style.width = "5px";
+          //   nav_blink_div[5].style.transition = "0.4s";
+          // });
+          // nav_links[5].addEventListener("mouseout",function(){
+          //   nav_blink_div[5].style.width = "0px";
+          //   nav_blink_div[5].style.transition = "0.4s";
+          // });
+
+          // nav_links[6].addEventListener("mouseover",function(){
+          //   nav_blink_div[6].style.width = "5px";
+          //   nav_blink_div[6].style.transition = "0.4s";
+          // });
+          // nav_links[6].addEventListener("mouseout",function(){
+          //   nav_blink_div[6].style.width = "0px";
+          //   nav_blink_div[6].style.transition = "0.4s";
+          // });
+      
+          // nav_links[7].addEventListener("mouseover",function(){
+          //   nav_blink_div[7].style.width = "5px";
+          //   nav_blink_div[7].style.transition = "0.4s";
+          // });
+          // nav_links[7].addEventListener("mouseout",function(){
+          //   nav_blink_div[7].style.width = "0px";
+          //   nav_blink_div[7].style.transition = "0.4s";
+          // });
+      
+          // nav_links[8].addEventListener("mouseover",function(){
+          //   nav_blink_div[8].style.width = "5px";
+          //   nav_blink_div[8].style.transition = "0.4s";
+          // });
+          // nav_links[8].addEventListener("mouseout",function(){
+          //   nav_blink_div[8].style.width = "0px";
+          //   nav_blink_div[8].style.transition = "0.4s";
+          // });
+      
+          // nav_links[9].addEventListener("mouseover",function(){
+          //   nav_blink_div[9].style.width = "5px";
+          //   nav_blink_div[9].style.transition = "0.4s";
+          // });
+          // nav_links[9].addEventListener("mouseout",function(){
+          //   nav_blink_div[9].style.width = "0px";
+          //   nav_blink_div[9].style.transition = "0.4s";
+          // });
+      
+          // nav_links[10].addEventListener("mouseover",function(){
+          //   nav_blink_div[10].style.width = "5px";
+          //   nav_blink_div[10].style.transition = "0.4s";
+          // });
+          // nav_links[10].addEventListener("mouseout",function(){
+          //   nav_blink_div[10].style.width = "0px";
+          //   nav_blink_div[10].style.transition = "0.4s";
+          // });
+      
+          // nav_links[11].addEventListener("mouseover",function(){
+          //   nav_blink_div[11].style.width = "5px";
+          //   nav_blink_div[11].style.transition = "0.4s";
+          // });
+          // nav_links[11].addEventListener("mouseout",function(){
+          //   nav_blink_div[11].style.width = "0px";
+          //   nav_blink_div[11].style.transition = "0.4s";
+          // });
+      
+          
+    </script>
+    <script>
+      var blinkdiv = document.getElementsByClassName("blinkdiv");
+      var blink = document.getElementsByClassName("blink");
+      
+      // blinkdiv[0].addEventListener("mouseover",function(){
+      // blink[0].style.width= "32px";
+      // blink[0].style.transition = "0.4s";
+      // });
+      // blinkdiv[0].addEventListener("mouseout",function(){
+      // blink[0].style.width= "0px";
+      // blink[0].style.transition = "0.4s";
+      // });
+
+      // blinkdiv[1].addEventListener("mouseover",function(){
+      // blink[1].style.width= "32px";
+      // blink[1].style.transition = "0.4s";
+      // });
+      // blinkdiv[1].addEventListener("mouseout",function(){
+      // blink[1].style.width= "0px";
+      // blink[1].style.transition = "0.4s";
+      // });
+
+      // blinkdiv[2].addEventListener("mouseover",function(){
+      // blink[2].style.width= "32px";
+      // blink[2].style.transition = "0.4s";
+      // });
+      // blinkdiv[2].addEventListener("mouseout",function(){
+      // blink[2].style.width= "0px";
+      // blink[2].style.transition = "0.4s";
+      // });
+
+      // blinkdiv[3].addEventListener("mouseover",function(){
+      // blink[3].style.width= "32px";
+      // blink[3].style.transition = "0.4s";
+      // });
+      // blinkdiv[3].addEventListener("mouseout",function(){
+      // blink[3].style.width= "0px";
+      // blink[3].style.transition = "0.4s";
+      // });
+
+      // blinkdiv[4].addEventListener("mouseover",function(){
+      // blink[4].style.width= "32px";
+      // blink[4].style.transition = "0.4s";
+      // });
+      // blinkdiv[4].addEventListener("mouseout",function(){
+      // blink[4].style.width= "0px";
+      // blink[4].style.transition = "0.4s";
+      // });
+    </script>
+    <!-- <script>
+      var database = document.getElementsByClassName("database");
+      var database_label = document.getElementsByClassName("database_label");
+      var databases = document.getElementsByClassName("databases");
+      var database_chosen = document.getElementsByClassName("database_chosen")[0];
+      var database_price;
+
+      var backend = document.getElementsByClassName("backend");
+      var backend_label = document.getElementsByClassName("backend_label");
+      var backends = document.getElementsByClassName("backends");
+      var backend_chosen = document.getElementsByClassName("backend_chosen")[0];
+      var backend_price=0;
+
+      var frontend = document.getElementsByClassName("frontend");
+      var frontend_label = document.getElementsByClassName("frontend_label");
+      var frontends = document.getElementsByClassName("frontends");
+      var frontend_chosen = document.getElementsByClassName("frontend_chosen")[0];
+      var frontend_price=0;
+      var total=0;
+
+      var total_estimate = document.getElementsByClassName("total_estimate")[0];
+
+      function total_amount(){
+        total = frontend_price + backend_price + database_price;
+        total_estimate.value = "$" + JSON.stringify(total);
+        console.log(total);
+      };
+      
+      databases[0].onclick = function(){
+        database_label[0].style.border = "2px solid #d33847";
+        database_chosen.value = database[0].value;
+        database_price = 0;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==0)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[1].onclick = function(){
+        database_label[1].style.border = "2px solid #d33847";
+        database_chosen.value = database[1].value;
+        database_price = 1; 
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==1)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[2].onclick = function(){
+        database_label[2].style.border = "2px solid #d33847";
+        database_chosen.value = database[2].value;
+        database_price = 2;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==2)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[3].onclick = function(){
+        database_label[3].style.border = "2px solid #d33847";
+        database_chosen.value = database[3].value;
+        database_price = 3;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==3)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[4].onclick = function(){
+        database_label[4].style.border = "2px solid #d33847";
+        database_chosen.value = database[4].value;
+        database_price = 4;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==4)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[5].onclick = function(){
+        database_label[5].style.border = "2px solid #d33847";
+        database_chosen.value = database[5].value;
+        database_price = 5;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==5)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[6].onclick = function(){
+        database_label[6].style.border = "2px solid #d33847";
+        database_chosen.value = database[6].value;
+        database_price = 6;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==6)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[7].onclick = function(){
+        database_label[7].style.border = "2px solid #d33847";
+        database_chosen.value = database[7].value;
+        database_price = 2; 
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==7)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[8].onclick = function(){
+        database_label[8].style.border = "2px solid #d33847";
+        database_chosen.value = database[8].value;
+        database_price = 8;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==8)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[9].onclick = function(){
+        database_label[9].style.border = "2px solid #d33847";
+        database_chosen.value = database[9].value;
+        database_price = 9;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==9)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[10].onclick = function(){
+        database_label[10].style.border = "2px solid #d33847";
+        database_chosen.value = database[10].value;
+        database_price = 10;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==10)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[11].onclick = function(){
+        database_label[11].style.border = "2px solid #d33847";
+        database_chosen.value = database[11].value;
+        database_price = 11;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==11)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[12].onclick = function(){
+        database_label[12].style.border = "2px solid #d33847";
+        database_chosen.value = database[12].value;
+        database_price = 12;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==12)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[13].onclick = function(){
+        database_label[13].style.border = "2px solid #d33847";
+        database_chosen.value = database[13].value;
+        database_price = 13;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==13)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      databases[14].onclick = function(){
+        database_label[14].style.border = "2px solid #d33847";
+        database_chosen.value = database[14].value;
+        database_price = 14;
+        total_amount();
+        for(let i=0;i<databases.length;i++){
+          if(i!==14)
+          {
+            database_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+
+
+      backends[0].onclick = function(){
+        backend_label[0].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[0].value;
+        backend_price = 0;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==0)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[1].onclick = function(){
+        backend_label[1].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[1].value;
+        backend_price = 1; 
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==1)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[2].onclick = function(){
+        backend_label[2].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[2].value;
+        backend_price = 2;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==2)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[3].onclick = function(){
+        backend_label[3].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[3].value;
+        backend_price = 3;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==3)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[4].onclick = function(){
+        backend_label[4].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[4].value;
+        backend_price = 4;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==4)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[5].onclick = function(){
+        backend_label[5].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[5].value;
+        backend_price = 5;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==5)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[6].onclick = function(){
+        backend_label[6].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[6].value;
+        backend_price = 6;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==6)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[7].onclick = function(){
+        backend_label[7].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[7].value;
+        backend_price = 2; 
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==7)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[8].onclick = function(){
+        backend_label[8].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[8].value;
+        backend_price = 8;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==8)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[9].onclick = function(){
+        backend_label[9].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[9].value;
+        backend_price = 9;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==9)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[10].onclick = function(){
+        backend_label[10].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[10].value;
+        backend_price = 10;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==10)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[11].onclick = function(){
+        backend_label[11].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[11].value;
+        backend_price = 11;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==11)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[12].onclick = function(){
+        backend_label[12].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[12].value;
+        backend_price = 12;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==12)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[13].onclick = function(){
+        backend_label[13].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[13].value;
+        backend_price = 13;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==13)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[14].onclick = function(){
+        backend_label[14].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[14].value;
+        backend_price = 14;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==14)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[15].onclick = function(){
+        backend_label[15].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[15].value;
+        backend_price = 0;
+        total_amount();
+        for(let i=15;i<backends.length;i++){
+          if(i!==15)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[16].onclick = function(){
+        backend_label[16].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[16].value;
+        backend_price = 16; 
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==16)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[17].onclick = function(){
+        backend_label[17].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[17].value;
+        backend_price = 17;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==17)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[18].onclick = function(){
+        backend_label[18].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[18].value;
+        backend_price = 18;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==18)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[19].onclick = function(){
+        backend_label[19].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[19].value;
+        backend_price = 19;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==19)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[20].onclick = function(){
+        backend_label[20].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[20].value;
+        backend_price = 20;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==20)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      backends[21].onclick = function(){
+        backend_label[21].style.border = "2px solid #d33847";
+        backend_chosen.value = backend[21].value;
+        backend_price = 21;
+        total_amount();
+        for(let i=0;i<backends.length;i++){
+          if(i!==21)
+          {
+            backend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+
+
+
+      frontends[0].onclick = function(){
+        frontend_label[0].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[0].value;
+        frontend_price = 0;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==0)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[1].onclick = function(){
+        frontend_label[1].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[1].value;
+        frontend_price = 1; 
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==1)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[2].onclick = function(){
+        frontend_label[2].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[2].value;
+        frontend_price = 2;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==2)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[3].onclick = function(){
+        frontend_label[3].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[3].value;
+        frontend_price = 3;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==3)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[4].onclick = function(){
+        frontend_label[4].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[4].value;
+        frontend_price = 4;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==4)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[5].onclick = function(){
+        frontend_label[5].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[5].value;
+        frontend_price = 5;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==5)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[6].onclick = function(){
+        frontend_label[6].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[6].value;
+        frontend_price = 6;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==6)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[7].onclick = function(){
+        frontend_label[7].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[7].value;
+        frontend_price = 2; 
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==7)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[8].onclick = function(){
+        frontend_label[8].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[8].value;
+        frontend_price = 8;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==8)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[9].onclick = function(){
+        frontend_label[9].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[9].value;
+        frontend_price = 9;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==9)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[10].onclick = function(){
+        frontend_label[10].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[10].value;
+        frontend_price = 10;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==10)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[11].onclick = function(){
+        frontend_label[11].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[11].value;
+        frontend_price = 11;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==11)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[12].onclick = function(){
+        frontend_label[12].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[12].value;
+        frontend_price = 12;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==12)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[13].onclick = function(){
+        frontend_label[13].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[13].value;
+        frontend_price = 13;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==13)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[14].onclick = function(){
+        frontend_label[14].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[14].value;
+        frontend_price = 14;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==14)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[15].onclick = function(){
+        frontend_label[15].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[15].value;
+        frontend_price = 15;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==15)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[16].onclick = function(){
+        frontend_label[16].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[16].value;
+        frontend_price = 16; 
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==16)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[17].onclick = function(){
+        frontend_label[17].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[17].value;
+        frontend_price = 17;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==17)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[18].onclick = function(){
+        frontend_label[18].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[18].value;
+        frontend_price = 18;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==18)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[19].onclick = function(){
+        frontend_label[19].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[19].value;
+        frontend_price = 19;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==19)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[20].onclick = function(){
+        frontend_label[20].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[20].value;
+        frontend_price = 20;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==20)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[21].onclick = function(){
+        frontend_label[21].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[21].value;
+        frontend_price = 21;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==21)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[22].onclick = function(){
+        frontend_label[22].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[22].value;
+        frontend_price = 22; 
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==22)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[23].onclick = function(){
+        frontend_label[23].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[23].value;
+        frontend_price = 23;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==23)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[24].onclick = function(){
+        frontend_label[24].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[24].value;
+        frontend_price = 24;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==24)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[25].onclick = function(){
+        frontend_label[25].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[25].value;
+        frontend_price = 25;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==25)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[26].onclick = function(){
+        frontend_label[26].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[26].value;
+        frontend_price = 26;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==26)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[27].onclick = function(){
+        frontend_label[27].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[27].value;
+        frontend_price = 27;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==27)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[28].onclick = function(){
+        frontend_label[28].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[28].value;
+        frontend_price = 28;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==28)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[29].onclick = function(){
+        frontend_label[29].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[29].value;
+        frontend_price = 29;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==29)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[30].onclick = function(){
+        frontend_label[30].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[30].value;
+        frontend_price = 30;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==30)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      frontends[31].onclick = function(){
+        frontend_label[31].style.border = "2px solid #d33847";
+        frontend_chosen.value = frontend[31].value;
+        frontend_price = 31;
+        total_amount();
+        for(let i=0;i<frontends.length;i++){
+          if(i!==31)
+          {
+            frontend_label[i].style.border = "2px solid #e5e7eb";
+          }
+        }
+      };
+      
+    </script> -->
+    
+  </body>
+</html>
